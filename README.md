@@ -45,8 +45,8 @@ import (
 
 func main() {
 	min, max := 1, 100
-	
-    rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
+    
+	rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
 	secretNumber := rand.Intn(max-min) + min
 
 	tries := 0
