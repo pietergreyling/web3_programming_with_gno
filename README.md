@@ -1,5 +1,5 @@
 # How to get started with Web3 Programming using Gno
-This is a simple tutorial on how to get started with Web3 programming using Gnolang and Gnoland. 
+This is a short tutorial on how to get started with Web3 programming using Gnolang and Gnoland. 
 
 You only need some basic Go programming language knowledge. 
 
