@@ -27,7 +27,7 @@ Gnolang Packages hold no state, only functionality.
 
 The example project for this tutorial is a simple number guessing game.
 
-In the Go programming language, the essential logic for a command line (CLI) / terminal program looks as follows.
+In the Go programming language, the essential logic for a command line guessing game program looks as follows.
 
 ```golang
 
