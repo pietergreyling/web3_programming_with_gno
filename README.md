@@ -16,11 +16,17 @@ The example project for this tutorial is a simple number guessing game.
 
 ## Recommended References about Gno
 
+Jae Kwon: Gnoland the Inevitable Next Generation Smart Contract Platform
+- https://youtu.be/IJ0xel8lr4c?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V
+
 GNO Example Demo
 - https://youtu.be/-BlnEXCs0eI
 
 Go to Gno: How to build a microblog
 - https://youtu.be/F-_dadxcRJM?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V
+
+Quick Intro to Gno - Manfred Touron
+- https://youtu.be/bA-lMd60Lts?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V
 
 Gnoland on YouTube
 - https://www.youtube.com/@_gnoland
