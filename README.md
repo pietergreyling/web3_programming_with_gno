@@ -12,17 +12,79 @@ This means that you can directly transfer your Go skills to Web3 development.
 
 ### Realms
 
+A Gnolang Realm is where the state of an application lives.
+
+Realms are the equivalent of Smart Contracts.
+
+- https://docs.onbloc.xyz/docs/building-a-realm
+
 
 ### Packages
 
+Gnolang Packages hold no state, only functionality.
 
 ## The Example Gno Project
 
 The example project for this tutorial is a simple number guessing game.
 
+In the Go programming language, the essential logic for a command line (CLI) / terminal program looks as follows.
 
+```golang
 
-## Recommended References
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"math/rand"
+	"os"
+	"strconv"
+	"strings"
+	"time"
+)
+
+func main() {
+	min, max := 1, 100
+	rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
+	secretNumber := rand.Intn(max-min) + min
+
+	fmt.Println("Guess a number between 1 and 100")
+	fmt.Println("Input your guess")
+
+	attempts := 0
+	for {
+		tries++
+		reader := bufio.NewReader(os.Stdin)
+		input, err := reader.ReadString('\n')
+		if err != nil {
+			fmt.Println("Error when reading input", err)
+			continue
+		}
+
+		input = strings.TrimSuffix(input, "\n")
+
+		guess, err := strconv.Atoi(input)
+		if err != nil {
+			fmt.Println("Invalid input - not a number. Please enter a number")
+			continue
+		}
+
+		fmt.Println("Your guess is", guess)
+
+		if guess > secretNumber {
+			fmt.Println("Higher than the secret number. Try again")
+		} else if guess < secretNumber {
+			fmt.Println("Lower than the secret number. Try again")
+		} else {
+			fmt.Println("Correct guess after", tries, "tries!")
+			break
+		}
+	}
+}
+
+```
+
+## References
 
 Jae Kwon: Gnoland the Inevitable Next Generation Smart Contract Platform
 
@@ -43,6 +105,10 @@ Quick Intro to Gno - Manfred Touron
 Gnoland on YouTube
 
 - https://www.youtube.com/@_gnoland
+
+Gno on GitHub
+
+- https://github.com/gnolang/gno
 
 Quickstart Guide
 
