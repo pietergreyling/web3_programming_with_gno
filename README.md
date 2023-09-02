@@ -45,13 +45,13 @@ import (
 
 func main() {
 	min, max := 1, 100
+    tries := 0
 	rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
 	secretNumber := rand.Intn(max-min) + min
 
 	fmt.Println("Guess a number between 1 and 100")
 	fmt.Println("Input your guess")
 
-	attempts := 0
 	for {
 		tries++
 		reader := bufio.NewReader(os.Stdin)
