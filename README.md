@@ -34,54 +34,54 @@ In the Go programming language, the essential logic for a command line guessing 
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"math/rand"
-	"os"
-	"strconv"
-	"strings"
-	"time"
+    "bufio"
+    "fmt"
+    "math/rand"
+    "os"
+    "strconv"
+    "strings"
+    "time"
 )
 
 func main() {
-	min, max := 1, 100
-    
-	rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
-	secretNumber := rand.Intn(max-min) + min
+    min, max := 1, 100
 
-	tries := 0
+    rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
+    secretNumber := rand.Intn(max-min) + min
 
-	fmt.Println("Guess a number between 1 and 100")
-	fmt.Println("Input your guess")
+    tries := 0
 
-	for {
-		tries++
-		reader := bufio.NewReader(os.Stdin)
-		input, err := reader.ReadString('\n')
-		if err != nil {
-			fmt.Println("Error when reading input", err)
-			continue
-		}
+    fmt.Println("Guess a number between 1 and 100")
+    fmt.Println("Input your guess")
 
-		input = strings.TrimSuffix(input, "\n")
+    for {
+        tries++
+        reader := bufio.NewReader(os.Stdin)
+        input, err := reader.ReadString('\n')
+        if err != nil {
+            fmt.Println("Error when reading input", err)
+            continue
+        }
 
-		guess, err := strconv.Atoi(input)
-		if err != nil {
-			fmt.Println("Invalid input - not a number. Please enter a number")
-			continue
-		}
+        input = strings.TrimSuffix(input, "\n")
 
-		fmt.Println("Your guess is", guess)
+        guess, err := strconv.Atoi(input)
+        if err != nil {
+            fmt.Println("Invalid input - not a number. Please enter a number")
+            continue
+        }
 
-		if guess > secretNumber {
-			fmt.Println("Higher than the secret number. Try again")
-		} else if guess < secretNumber {
-			fmt.Println("Lower than the secret number. Try again")
-		} else {
-			fmt.Println("Correct guess after", tries, "tries!")
-			break
-		}
-	}
+        fmt.Println("Your guess is", guess)
+
+        if guess > secretNumber {
+                fmt.Println("Higher than the secret number. Try again")
+            } else if guess < secretNumber {
+                fmt.Println("Lower than the secret number. Try again")
+            } else {
+                fmt.Println("Correct guess after", tries, "tries!")
+            break
+        }
+    }
 }
 
 ```
