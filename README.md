@@ -108,7 +108,11 @@ Gnoland on YouTube
 
 - https://www.youtube.com/@_gnoland
 
-Gno on GitHub
+Gno on GitHub - Gno(Lang) & Gno.land
+
+- https://github.com/gnolang
+
+Gnolang on GitHub
 
 - https://github.com/gnolang/gno
 
