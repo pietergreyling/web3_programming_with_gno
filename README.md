@@ -51,15 +51,15 @@ func main() {
 
     tries := 0
 
-    fmt.Println("Guess a number between 1 and 100")
-    fmt.Println("Input your guess")
+    fmt.Println("-- Please guess a number between 1 and 100.")
+    fmt.Println("-- Input your guess.")
 
     for {
         tries++
         reader := bufio.NewReader(os.Stdin)
         input, err := reader.ReadString('\n')
         if err != nil {
-            fmt.Println("Error when reading input", err)
+            fmt.Println("-- Error when reading input!", err)
             continue
         }
 
@@ -67,24 +67,55 @@ func main() {
 
         guess, err := strconv.Atoi(input)
         if err != nil {
-            fmt.Println("Invalid input - not a number. Please enter a number")
+            fmt.Println("-- Invalid input - that is not a number! Please enter a number.")
             continue
         }
 
-        fmt.Println("Your guess is", guess)
+        fmt.Println("-- Your guess is: ", guess)
 
         if guess > secretNumber {
-                fmt.Println("Higher than the secret number. Try again")
+                fmt.Println("-- That is higher than the secret number.")
+                fmt.Println("-- Please try again...")
             } else if guess < secretNumber {
-                fmt.Println("Lower than the secret number. Try again")
+                fmt.Println("-- That is lower than the secret number.")
+                fmt.Println("-- Please try again...")
             } else {
-                fmt.Println("Correct guess after", tries, "tries!")
+                fmt.Println("-- That is the correct guess after", tries, "tries!")
             break
         }
     }
 }
 
 ```
+
+As preparation for porting this to a Gnolang realm and package architecture do the following.
+
+```shell
+go run .
+-- Please guess a number between 1 and 100.
+-- Input your guess.
+50
+-- Your guess is:  50
+-- That is higher than the secret number.
+-- Please try again...
+25
+-- Your guess is:  25
+-- That is higher than the secret number.
+-- Please try again...
+12
+-- Your guess is:  12
+-- That is higher than the secret number.
+-- Please try again...
+6
+-- Your guess is:  6
+-- That is lower than the secret number.
+-- Please try again...
+9
+-- Your guess is:  9
+-- That is the correct guess after 5 tries!
+```
+
+We have now verified that the program is working as expected.
 
 ## References
 
