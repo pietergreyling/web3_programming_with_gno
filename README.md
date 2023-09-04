@@ -29,11 +29,6 @@ The example project for this tutorial is a simple number guessing game.
 
 In the Go programming language, the essential logic for a command line guessing game program looks as follows.
 
-You will notice that we have made sure to separate the stateful main function from the stateless number guessing code. This is in order to be in line with the Gnolang concepts of Realms and Packages:
-
-- The stateful main function will become a Realm
-- The stateless number guessing code will become a Package
-
 ```golang
 
 // Set up the module:
@@ -116,6 +111,11 @@ func TestGuess(guess int, secret int, min int, max int) bool {
 }
 
 ```
+
+Please notice that we have made sure to separate the stateful main function from the stateless number guessing code. This is in order to be in line with the Gnolang concepts of Realms and Packages:
+
+- The stateful main function will become a Realm
+- The stateless number guessing code will become a Package
 
 As preparation for porting this to a Gnolang realm and package architecture we run a quick test by doing the following.
 
