@@ -29,90 +29,124 @@ The example project for this tutorial is a simple number guessing game.
 
 In the Go programming language, the essential logic for a command line guessing game program looks as follows.
 
+You will notice that we have made sure to separate the stateful main function from the stateless number guessing code. This is in order to be in line with the Gnolang concepts of Realms and Packages:
+
+- The stateful main function will become a Realm
+- The stateless number guessing code will become a Package
+
 ```golang
+
+// Set up the module:
+// go mod init github.com/pietergreyling/web3_programming_with_gno/m/v2
 
 package main
 
 import (
-    "bufio"
-    "fmt"
-    "math/rand"
-    "os"
-    "strconv"
-    "strings"
-    "time"
+	"bufio"
+	"fmt"
+	"math/rand"
+	"os"
+	"strconv"
+	"strings"
+	"time"
 )
 
+// Main holds the global state in this program - - - -
 func main() {
-    min, max := 1, 100
 
-    rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
-    secretNumber := rand.Intn(max-min) + min
+	min, max := 1, 100
+	tries := 0
+	correct := false
 
-    tries := 0
+	rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
+	secret := rand.Intn(max-min) + min
 
-    fmt.Println("-- Please guess a number between 1 and 100.")
-    fmt.Println("-- Input your guess.")
+	fmt.Println("-- Please guess a number between 1 and 100.")
 
-    for {
-        tries++
-        reader := bufio.NewReader(os.Stdin)
-        input, err := reader.ReadString('\n')
-        if err != nil {
-            fmt.Println("-- Error when reading input!", err)
-            continue
-        }
+	reader := bufio.NewReader(os.Stdin)
 
-        input = strings.TrimSuffix(input, "\n")
+	for {
+		tries++
 
-        guess, err := strconv.Atoi(input)
-        if err != nil {
-            fmt.Println("-- Invalid input - that is not a number! Please enter a number.")
-            continue
-        }
+		input, err := reader.ReadString('\n')
+		if err != nil {
+			fmt.Println("-- Error when reading input!", err)
+			continue
+		}
 
-        fmt.Println("-- Your guess is: ", guess)
+		input = strings.TrimSuffix(input, "\n")
 
-        if guess > secretNumber {
-                fmt.Println("-- That is higher than the secret number.")
-                fmt.Println("-- Please try again...")
-            } else if guess < secretNumber {
-                fmt.Println("-- That is lower than the secret number.")
-                fmt.Println("-- Please try again...")
-            } else {
-                fmt.Println("-- That is the correct guess after", tries, "tries!")
-            break
-        }
-    }
+		guess, err := strconv.Atoi(input)
+		if err != nil {
+			fmt.Println("-- Invalid input - that is not a number!")
+			fmt.Println("-- Please enter a number.")
+			continue
+		}
+
+		correct = TestGuess(guess, secret, min, max)
+		if correct {
+			break
+		}
+	}
+
+	fmt.Println("-- You tried", tries, "times!")
+}
+
+// No global state is held here - - - -
+func TestGuess(guess int, secret int, min int, max int) bool {
+
+	correct := false
+
+	fmt.Println("-- Your guess is: ", guess)
+
+	if guess > secret {
+		correct = false
+		fmt.Println("-- That is higher than the secret number.")
+		fmt.Println("-- Please try again...")
+	} else if guess < secret {
+		correct = false
+		fmt.Println("-- That is lower than the secret number.")
+		fmt.Println("-- Please try again...")
+	} else {
+		correct = true
+		fmt.Println("-- That is the correct number, congratulations!")
+	}
+
+	return correct
 }
 
 ```
 
-As preparation for porting this to a Gnolang realm and package architecture do the following.
+As preparation for porting this to a Gnolang realm and package architecture we run a quick test by doing the following.
 
 ```shell
+cd src_go
 go run .
 -- Please guess a number between 1 and 100.
--- Input your guess.
 50
 -- Your guess is:  50
--- That is higher than the secret number.
--- Please try again...
-25
--- Your guess is:  25
--- That is higher than the secret number.
--- Please try again...
-12
--- Your guess is:  12
--- That is higher than the secret number.
--- Please try again...
-6
--- Your guess is:  6
 -- That is lower than the secret number.
 -- Please try again...
-9
--- Your guess is:  9
--- That is the correct guess after 5 tries!
+75
+-- Your guess is:  75
+-- That is higher than the secret number.
+-- Please try again...
+62
+-- Your guess is:  62
+-- That is lower than the secret number.
+-- Please try again...
+68
+-- Your guess is:  68
+-- That is higher than the secret number.
+-- Please try again...
+65
+-- Your guess is:  65
+-- That is lower than the secret number.
+-- Please try again...
+67
+-- Your guess is:  67
+-- That is the correct number, congratulations!
+-- You tried 6 times!
 ```
 
 We have now verified that the program is working as expected.
