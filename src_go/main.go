@@ -1,3 +1,6 @@
+// DO!!:
+// go mod init github.com/pietergreyling/web3_programming_with_gno/m/v2
+
 package main
 
 import (
