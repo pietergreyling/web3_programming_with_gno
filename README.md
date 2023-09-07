@@ -10,20 +10,17 @@ This means that you can directly transfer your Go skills to Web3 development.
 
 ## Introductory Gnolang Concepts
 
-### Realms
-
-A Gnolang Realm is where the state of an application lives.
-
-Realms are the equivalent of Smart Contracts.
-
-- https://docs.onbloc.xyz/docs/building-a-realm
-
-
 ### Packages
 
-Gnolang Packages hold no state, only functionality.
+Gnolang [Packages](https://docs.onbloc.xyz/docs/building-a-realm/overview#packages) hold no state, only functionality.
 
-## The Example Gno Project
+### Realms
+
+A Gnolang [Realm](https://docs.onbloc.xyz/docs/building-a-realm/overview#realms) is where the state of an application lives.
+
+Realms are [Smart Contracts](https://docs.onbloc.xyz/docs/building-a-realm).
+
+## The Example Go Project that we will port to Gno
 
 The example project for this tutorial is a simple number guessing game.
 
@@ -153,55 +150,28 @@ We have now verified that the program is working as expected.
 
 ## References
 
-Jae Kwon: Gnoland the Inevitable Next Generation Smart Contract Platform
+- [Gnoland on YouTube](https://www.youtube.com/@_gnoland)
 
-- https://youtu.be/IJ0xel8lr4c?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V
+  - [Jae Kwon: Gnoland the Inevitable Next Generation Smart Contract Platform](https://youtu.be/IJ0xel8lr4c?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V)
 
-GNO Example Demo
+  - [GNO Example Demo](https://youtu.be/-BlnEXCs0eI)
 
-- https://youtu.be/-BlnEXCs0eI
+  - [Quick Intro to Gno](https://youtu.be/bA-lMd60Lts?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V)
 
-Go to Gno: How to build a microblog
+  - [Go to Gno: How to build a microblog](https://youtu.be/F-_dadxcRJM?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V)
 
-- https://youtu.be/F-_dadxcRJM?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V
+- [Gnolang on GitHub](https://github.com/gnolang/gno)
 
-Quick Intro to Gno - Manfred Touron
+  - [Gno(Lang) & Gno.land](https://github.com/gnolang)
 
-- https://youtu.be/bA-lMd60Lts?list=PLc_cC_y0BSHymUiUnIoZPeg_BpYwitw8V
+  - [Quickstart Guide](https://github.com/gnolang/gno/blob/master/examples/gno.land/r/demo/boards/README.md)
 
-Gnoland on YouTube
+  - [Gnoland Developer Portal](https://docs.onbloc.xyz)
 
-- https://www.youtube.com/@_gnoland
+  - [Awesome Gno](https://github.com/gnolang/awesome-gno)
 
-Gno on GitHub - Gno(Lang) & Gno.land
+  - [Awesome Gno Tutorials](https://github.com/gnolang/awesome-gno#tutorials)
 
-- https://github.com/gnolang
+  - [Gnolang Examples](https://github.com/gnolang/gno/tree/master/examples)
 
-Gnolang on GitHub
-
-- https://github.com/gnolang/gno
-
-Quickstart Guide
-
-- https://github.com/gnolang/gno/blob/master/examples/gno.land/r/demo/boards/README.md
-
-Gnoland Developer Portal
-
-- https://docs.onbloc.xyz
-
-Awesome Gno
-
-- https://github.com/gnolang/awesome-gno
-
-Awesome Gno Tutorials
-
-- https://github.com/gnolang/awesome-gno#tutorials
-
-Gno By Example
-
-- https://gno-by-example.com
-
-Gnolang Examples
-
-- https://github.com/gnolang/gno/tree/master/examples
-
+- [Gno By Example](https://gno-by-example.com)
