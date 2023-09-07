@@ -8,6 +8,18 @@ Gnolang is a version of Golang but it is built for Web3 programming.
 
 This means that you can directly transfer your Go skills to Web3 development.
 
+## Source Code Editing Tools
+
+For editing the code of this project I will be using [Visual Studio Code (VSCode)](https://code.visualstudio.com/).
+
+The following two VSCode extensions are highly recommended:
+
+- [Go in Visual Studio Code](https://code.visualstudio.com/docs/languages/go)
+
+- [Gno for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=harry-hov.gno)
+
+However, please feel free to use any other editing environment that you prefer.
+
 ## Introductory Gnolang Concepts
 
 ### Packages
@@ -24,7 +36,7 @@ Realms are [Smart Contracts](https://docs.onbloc.xyz/docs/building-a-realm).
 
 The example project for this tutorial is a simple number guessing game.
 
-In the Go programming language, the essential logic for a command line guessing game program looks as follows.
+In the Go programming language, the essential logic for a command line guessing game program looks as follows:
 
 ```golang
 
@@ -114,7 +126,7 @@ Please notice that we have made sure to separate the stateful main function from
 - The stateful main function will become a Realm
 - The stateless number guessing code will become a Package
 
-As preparation for porting this to a Gnolang realm and package architecture we run a quick test by doing the following.
+As preparation for porting this to a Gnolang realm and package architecture we run a quick test by executing the following:
 
 ```shell
 cd src_go
