@@ -194,6 +194,45 @@ go run .
 
 We have now verified that the program is working as expected.
 
+## Setting up the Gno Development Environment
+
+### Prerequisites
+
+The following dependencies are required to develop applications for the Gno platform.
+
+- Install [Go](https://go.dev/) 1.18 or newer if you haven't already.
+
+- Install [Gno](https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install):
+
+  ```shell
+  go install github.com/gnolang/gno/gnovm/cmd/gno
+  ```
+  
+  Or (I will use this method):
+
+  ```shell
+  cd [YOUR_PROJECT_ROOT_DIRECTORY]
+  git clone git@github.com:gnolang/gno.git
+  cd ./gno
+  make install_gno
+  ```
+
+- Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey):
+
+  ```shell
+  cd [YOUR_PROJECT_ROOT_DIRECTORY]
+  # Assuming the following has been executed:
+  #   git clone git@github.com:gnolang/gno.git
+  cd ./gno
+  make install_gnokey
+  ```
+
+- Install [gofumpt](https://github.com/mvdan/gofumpt):
+
+  ```shell
+  go install mvdan.cc/gofumpt@latest
+  ```
+
 ## References
 
 - [Gnoland on YouTube](https://www.youtube.com/@_gnoland)
