@@ -20,9 +20,9 @@ The following two VSCode extensions are highly recommended:
 
 However, please feel free to use any other editing environment that you prefer.
 
-## Introductory Gno Concepts
+## Introductory Gno
 
-### Overview
+### Overview and Concepts
 
 [What is Gnoland?](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland)
 
