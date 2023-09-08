@@ -48,7 +48,7 @@ A Gnolang [Realm](https://docs.onbloc.xyz/docs/building-a-realm/overview#realms)
 - The default import path is ```gno.land/r/~~~```.
 - Each realm has the capability to publicly export the function Render(path string) string, which performs rendering when passed a valid markdown as a parameter for the specified path.
 
-## The Example Go Project that we will port to Gno
+## The Example Go Project that we will port to Gnolang
 
 The example project for this tutorial is a simple number guessing game.
 
