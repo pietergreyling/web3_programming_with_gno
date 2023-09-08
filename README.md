@@ -4,7 +4,7 @@ This is a short tutorial on how to get started with Web3 programming using Gnola
 
 You only need some basic Go programming language knowledge. 
 
-Gnolang is a version of Golang but it is built for Web3 programming. 
+[Gnolang an interpreted variant of the Golang language](https://docs.onbloc.xyz/docs/terminology#gnolang) that [is built for Web3 programming](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland/concepts#gnolang).
 
 This means that you can directly transfer your Go skills to Web3 development.
 
@@ -43,6 +43,10 @@ Gnoland introduces multiple concepts that together form a scalable, transparent,
 - [Gnoland Developer Portal](https://docs.onbloc.xyz/)
 
 - [Intro to Gnoland - The Smart Contract Platform to Improve Our Understanding of the World](https://test3.gno.land/r/gnoland/blog:p/intro)
+
+- [Gnoland Virtual Machine (GnoVM)](https://docs.onbloc.xyz/docs/terminology#gnoland-virtual-machine-gnovm)
+
+- [Tendermint2](https://docs.onbloc.xyz/docs/terminology#tendermint2)
 
 ### Packages
 
