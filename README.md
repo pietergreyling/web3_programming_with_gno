@@ -236,12 +236,6 @@ The dependencies below are required to develop applications for the Gno platform
   cd ./gno
   make install_gno
   ```
-
-  Or:
-
-  ```shell
-  go install github.com/gnolang/gno/gnovm/cmd/gno
-  ```
   
 - Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey).
 
@@ -258,6 +252,77 @@ The dependencies below are required to develop applications for the Gno platform
   ```shell
   go install mvdan.cc/gofumpt@latest
   ```
+
+Our installation output should look something like the following:
+
+  ```shell
+  make install_gno
+  >> make --no-print-directory -C ./gnovm    install
+  >> go install ./cmd/gno
+  >> [+] 'gno' is installed. more info in ./gnovm/.
+
+  make install_gnokey
+  >> make --no-print-directory -C ./gno.land install.gnokey
+  >> go install ./cmd/gnokey
+  >> [+] 'gnokey' is installed. more info in ./gno.land/.
+
+  go install mvdan.cc/gofumpt@latest
+  >> go: downloading mvdan.cc/gofumpt v0.5.0
+  >> go: downloading golang.org/x/sync v0.1.0
+  >> go: downloading golang.org/x/mod v0.10.0
+  >> go: downloading golang.org/x/tools v0.8.0
+  ```
+
+We can now ask for help from the Gno tools:
+
+```shell
+# GNO
+gno help 
+
+USAGE
+  <subcommand> [flags] [<arg>...]
+
+Runs the gno development toolkit
+
+SUBCOMMANDS
+  mod         Manage gno.mod
+  test        Runs the tests for the specified packages
+  lint        Runs the linter for the specified packages
+  run         Runs the specified gno files
+  build       Builds the specified gno package
+  precompile  Precompiles .gno files to .go
+  clean       Removes generated files and cached data
+  repl        Starts a GnoVM REPL
+  doc         get documentation for the specified package or symbol (type, function, method, or variable/constant)
+
+#GNOKEY
+gnokey help
+
+USAGE
+  <subcommand> [flags] [<arg>...]
+
+Manages private keys for the node
+
+SUBCOMMANDS
+  add        Adds key to the keybase
+  delete     Deletes a key from the keybase
+  generate   Generates a bip39 mnemonic
+  export     Exports private key armor
+  import     Imports encrypted private key armor
+  list       Lists all keys in the keybase
+  sign       Signs the document
+  verify     Verifies the document signature
+  query      Makes an ABCI query
+  broadcast  Broadcasts a signed document
+  maketx     Composes a tx document to sign
+
+FLAGS
+  -config ...                     config file (optional)
+  -home /home/pieter/.config/gno  home directory
+  -insecure-password-stdin=false  WARNING! take password from stdin
+  -quiet=false                    suppress output during execution
+  -remote 127.0.0.1:26657         remote node URL
+```
 
 ## References
 
