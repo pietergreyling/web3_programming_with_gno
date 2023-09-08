@@ -26,9 +26,23 @@ However, please feel free to use any other editing environment that you prefer.
 
 [What is Gnoland?](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland)
 
+Gnoland is a new smart contract platform based on Gnolang, a fork of Golang. Gnolang inherits the concurrency and developer-friendliness of Golang while fully leveraging the rich libraries and packages that are already available. This approach greatly accelerates application development by allowing dapp developers to reuse and re-assemble existing code, similar to how Cosmos simplified blockchain deployment. 
+
+Gnoland introduces multiple concepts that together form a scalable, transparent, and sustainable blockchain ecosystem that suggest a viable solution to challenges that existing blockchains are faced with.
+
 - [Overview](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland/overview)
 
 - [Concepts](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland/concepts/)
+
+- [Terminology](https://docs.onbloc.xyz/docs/terminology)
+
+- [Proof of Contribution (PoC)](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland/concepts#proof-of-contribution)
+
+- [The Official Gnoland Blog](https://test3.gno.land/r/gnoland/blog)
+
+- [Gnoland Developer Portal](https://docs.onbloc.xyz/)
+
+- [Intro to Gnoland - The Smart Contract Platform to Improve Our Understanding of the World](https://test3.gno.land/r/gnoland/blog:p/intro)
 
 ### Packages
 
