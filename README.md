@@ -203,12 +203,8 @@ The following dependencies are required to develop applications for the Gno plat
 - Install [Go](https://go.dev/) 1.18 or newer if you haven't already.
 
 - Install [Gno](https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install):
-
-  ```shell
-  go install github.com/gnolang/gno/gnovm/cmd/gno
-  ```
   
-  Or (I will use this method):
+  I will use this method:
 
   ```shell
   cd [YOUR_PROJECT_ROOT_DIRECTORY]
@@ -217,6 +213,12 @@ The following dependencies are required to develop applications for the Gno plat
   make install_gno
   ```
 
+  Or
+
+  ```shell
+  go install github.com/gnolang/gno/gnovm/cmd/gno
+  ```
+  
 - Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey):
 
   ```shell
