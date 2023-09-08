@@ -198,9 +198,33 @@ We have now verified that the program is working as expected.
 
 ### Prerequisites
 
-The following dependencies are required to develop applications for the Gno platform.
+#### Important Notes before proceeding
 
-- Install [Go](https://go.dev/) 1.18 or newer if you haven't already.
+- To install Gno I used (see below):
+
+  ```shell
+  git clone https://github.com/gnolang/gno.git
+  ```
+
+  Instead of (as per the documentation):
+
+  ```shell
+  git clone git@github.com:gnolang/gno.git
+  ```
+
+#### Now Install the following
+
+The dependencies below are required to develop applications for the Gno platform.
+
+
+- Install the latest version of [Go](https://go.dev/) if you haven't already.
+
+  On my system:
+
+  ```shell
+  go version
+  >> go version go1.21.1 linux/amd64
+  ```
 
 - Install [Gno](https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install).
   
