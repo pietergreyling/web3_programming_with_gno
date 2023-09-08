@@ -1,6 +1,6 @@
 # How to get started with Web3 Programming using Gno
 
-This is a short tutorial on how to get started with Web3 programming using Gnolang and Gnoland. 
+This is a short tutorial on how to get started with Web3 programming using Gnolang and Gnoland.
 
 You only need some basic Go programming language knowledge. 
 
@@ -20,17 +20,33 @@ The following two VSCode extensions are highly recommended:
 
 However, please feel free to use any other editing environment that you prefer.
 
-## Introductory Gnolang Concepts
+## Introductory Gno Concepts
+
+### Overview
+
+[What is Gnoland?](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland)
+
+- [Overview](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland/overview)
+
+- [Concepts](https://docs.onbloc.xyz/introduction-to-gnoland/what-is-gnoland/concepts/)
 
 ### Packages
 
-Gnolang [Packages](https://docs.onbloc.xyz/docs/building-a-realm/overview#packages) hold no state, only functionality.
+[Packages](https://docs.onbloc.xyz/docs/packages) encompass functionalities that are more closely aligned with the characteristics and capabilities of realms, as opposed to standard libraries.
+
+- A unit that contains functionalities and utilities that can be used in realms.
+- Gnolang [Packages](https://docs.onbloc.xyz/docs/building-a-realm/overview#packages) are stateless.
+- The default import path is ```gno.land/p/~~~```.
+- Can be imported to other realms or packages.
 
 ### Realms
 
 A Gnolang [Realm](https://docs.onbloc.xyz/docs/building-a-realm/overview#realms) is where the state of an application lives.
 
-Realms are [Smart Contracts](https://docs.onbloc.xyz/docs/building-a-realm).
+- Realms are [Smart Contracts](https://docs.onbloc.xyz/docs/building-a-realm) in Gnolang.
+- Realms are stateful.
+- The default import path is ```gno.land/r/~~~```.
+- Each realm has the capability to publicly export the function Render(path string) string, which performs rendering when passed a valid markdown as a parameter for the specified path.
 
 ## The Example Go Project that we will port to Gno
 
