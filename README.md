@@ -202,7 +202,7 @@ The following dependencies are required to develop applications for the Gno plat
 
 - Install [Go](https://go.dev/) 1.18 or newer if you haven't already.
 
-- Install [Gno](https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install):
+- Install [Gno](https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install).
   
   I will use this method:
 
@@ -213,13 +213,13 @@ The following dependencies are required to develop applications for the Gno plat
   make install_gno
   ```
 
-  Or
+  Or:
 
   ```shell
   go install github.com/gnolang/gno/gnovm/cmd/gno
   ```
   
-- Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey):
+- Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey).
 
   ```shell
   cd [YOUR_PROJECT_ROOT_DIRECTORY]
@@ -229,7 +229,7 @@ The following dependencies are required to develop applications for the Gno plat
   make install_gnokey
   ```
 
-- Install [gofumpt](https://github.com/mvdan/gofumpt):
+- Install [gofumpt](https://github.com/mvdan/gofumpt).
 
   ```shell
   go install mvdan.cc/gofumpt@latest
