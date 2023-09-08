@@ -200,7 +200,7 @@ We have now verified that the program is working as expected.
 
 #### Important Notes before proceeding
 
-- To install Gno I used (see below):
+- To install Gno I used:
 
   ```shell
   git clone https://github.com/gnolang/gno.git
