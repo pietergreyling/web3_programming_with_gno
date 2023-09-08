@@ -208,7 +208,7 @@ The following dependencies are required to develop applications for the Gno plat
 
   ```shell
   cd [YOUR_PROJECT_ROOT_DIRECTORY]
-  git clone git@github.com:gnolang/gno.git
+  git clone https://github.com/gnolang/gno.git
   cd ./gno
   make install_gno
   ```
@@ -224,7 +224,7 @@ The following dependencies are required to develop applications for the Gno plat
   ```shell
   cd [YOUR_PROJECT_ROOT_DIRECTORY]
   # Assuming the following has been executed:
-  #   git clone git@github.com:gnolang/gno.git
+  #   https://github.com/gnolang/gno.git
   cd ./gno
   make install_gnokey
   ```
