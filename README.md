@@ -203,3 +203,5 @@ We have now verified that the program is working as expected.
   - [Gnolang Examples](https://github.com/gnolang/gno/tree/master/examples)
 
 - [Gno By Example](https://gno-by-example.com)
+
+- [Gnoland's Blog](https://test3.gno.land/r/gnoland/blog)
