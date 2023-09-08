@@ -276,52 +276,9 @@ Our installation output should look something like the following:
 We can now ask for help from the Gno tools:
 
 ```shell
-# GNO
 gno help 
 
-USAGE
-  <subcommand> [flags] [<arg>...]
-
-Runs the gno development toolkit
-
-SUBCOMMANDS
-  mod         Manage gno.mod
-  test        Runs the tests for the specified packages
-  lint        Runs the linter for the specified packages
-  run         Runs the specified gno files
-  build       Builds the specified gno package
-  precompile  Precompiles .gno files to .go
-  clean       Removes generated files and cached data
-  repl        Starts a GnoVM REPL
-  doc         get documentation for the specified package or symbol (type, function, method, or variable/constant)
-
-#GNOKEY
 gnokey help
-
-USAGE
-  <subcommand> [flags] [<arg>...]
-
-Manages private keys for the node
-
-SUBCOMMANDS
-  add        Adds key to the keybase
-  delete     Deletes a key from the keybase
-  generate   Generates a bip39 mnemonic
-  export     Exports private key armor
-  import     Imports encrypted private key armor
-  list       Lists all keys in the keybase
-  sign       Signs the document
-  verify     Verifies the document signature
-  query      Makes an ABCI query
-  broadcast  Broadcasts a signed document
-  maketx     Composes a tx document to sign
-
-FLAGS
-  -config ...                     config file (optional)
-  -home /home/pieter/.config/gno  home directory
-  -insecure-password-stdin=false  WARNING! take password from stdin
-  -quiet=false                    suppress output during execution
-  -remote 127.0.0.1:26657         remote node URL
 ```
 
 ## References
