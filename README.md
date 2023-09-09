@@ -236,6 +236,12 @@ The dependencies below are required to develop applications for the Gno platform
   cd ./gno
   make install_gno
   ```
+
+  But one can also install gno like this:
+
+  ```shell
+  go install github.com/gnolang/gno/gnovm/cmd/gno
+  ```
   
 - Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey).
 
