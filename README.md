@@ -202,7 +202,8 @@ We have now verified that the program is working as expected.
 - To install Gno I used:
 
   ```shell
-  git clone https://github.com/gnolang/gno.git
+  # git clone https://github.com/gnolang/gno.git
+  git submodule add https://github.com/gnolang/gno.git
   ```
 
   Instead of (as per the documentation):
@@ -237,7 +238,8 @@ The dependencies below are required to develop applications for the Gno platform
 
   ```shell
   cd [YOUR_PROJECT_ROOT_DIRECTORY]
-  git clone https://github.com/gnolang/gno.git
+  # git clone https://github.com/gnolang/gno.git
+  git submodule add https://github.com/gnolang/gno.git
   cd ./gno
   make install_gno
   ```
