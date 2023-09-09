@@ -10,7 +10,6 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"time"
 )
 
 // Example session:
@@ -48,7 +47,6 @@ func main() {
 	tries := 0
 	correct := false
 
-	rand.Seed(time.Now().UnixNano()) // otherwise we will get the same secret
 	secret := rand.Intn(max-min) + min
 
 	fmt.Println("-- Please guess a number between 1 and 100.")
