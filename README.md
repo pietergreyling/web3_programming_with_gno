@@ -341,18 +341,28 @@ Navigating to Gnoweb at http://127.0.0.1:8888 with a browser should present the 
 
 Currently, in order to create our Gnolang package and realm ```.gno``` code files, we have to be aware of the following folders:
 
- ```shell
- # the root
- gno/examples/gno.land
+```shell
+# the root
+gno/examples/gno.land
 
- # the folder for packages
- gno/examples/gno.land/p/demo
+# the folder for packages
+gno/examples/gno.land/p/demo
  
- # the folder for realms
- gno/examples/gno.land/r/demo
+# the folder for realms
+gno/examples/gno.land/r/demo
+
+# the folder tree
+├── gno
+│   ├── examples
+│   │   └── gno.land
+│   │       ├── p
+│   │       │   └── demo
+│   │       │       ├── ...
+│   │       │    
+│   │       └── r
+│   │           ├── demo
+│   │           │   ├── ...
  ```
-
-
 
 ## References
 
