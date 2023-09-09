@@ -22,9 +22,23 @@ go install github.com/gnolang/gno/gnovm/cmd/gno
 
 cd [YOUR_PROJECT_ROOT_DIRECTORY]
 # Assuming the following has been executed:
-#   https://github.com/gnolang/gno.git
+#   git clone https://github.com/gnolang/gno.git
 cd ./gno
 make install_gnokey
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Installing Gnoland
+# https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoland
+
+cd [YOUR_PROJECT_ROOT_DIRECTORY]
+# Assuming the following has been executed:
+#   git clone https://github.com/gnolang/gno.git
+cd ./gno/gno.land
+make install.gnoland
+# >> go install ./cmd/gnoland
+
+# Run gnoland full node
+gnoland start
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Installing gofumpt

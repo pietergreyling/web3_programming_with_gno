@@ -247,10 +247,16 @@ The dependencies below are required to develop applications for the Gno platform
 
   ```shell
   cd [YOUR_PROJECT_ROOT_DIRECTORY]
-  # Assuming the following has been executed:
-  #   https://github.com/gnolang/gno.git
   cd ./gno
   make install_gnokey
+  ```
+
+- Install [Gnoland](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoland).
+
+  ```shell
+  cd [YOUR_PROJECT_ROOT_DIRECTORY]
+  cd ./gno/gno.land
+  make install.gnoland
   ```
 
 - Install [gofumpt](https://github.com/mvdan/gofumpt).
@@ -271,6 +277,9 @@ Our installation output should look something like the following:
   >> make --no-print-directory -C ./gno.land install.gnokey
   >> go install ./cmd/gnokey
   >> [+] 'gnokey' is installed. more info in ./gno.land/.
+
+  make install.gnoland
+  >> go install ./cmd/gnoland
 
   go install mvdan.cc/gofumpt@latest
   >> go: downloading mvdan.cc/gofumpt v0.5.0
