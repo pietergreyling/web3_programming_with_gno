@@ -2,6 +2,12 @@
 # A FILE TO KEEP CONVENIENT SNIPPETS
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Installing gofumpt
+# https://github.com/mvdan/gofumpt
+
+go install mvdan.cc/gofumpt@latest
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Installing Gno
 # https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install
   
@@ -21,8 +27,6 @@ go install github.com/gnolang/gno/gnovm/cmd/gno
 # https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey
 
 cd [YOUR_PROJECT_ROOT_DIRECTORY]
-# Assuming the following has been executed:
-#   git clone https://github.com/gnolang/gno.git
 cd ./gno
 make install_gnokey
 
@@ -31,20 +35,20 @@ make install_gnokey
 # https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoland
 
 cd [YOUR_PROJECT_ROOT_DIRECTORY]
-# Assuming the following has been executed:
-#   git clone https://github.com/gnolang/gno.git
 cd ./gno/gno.land
 make install.gnoland
-# >> go install ./cmd/gnoland
 
 # Run gnoland full node
 gnoland start
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Installing gofumpt
-# https://github.com/mvdan/gofumpt
+# Installing gnoweb
+# https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoweb
+# Install and run a local gnoland instance first.
 
-go install mvdan.cc/gofumpt@latest
+cd [YOUR_PROJECT_ROOT_DIRECTORY]
+cd ./gno/gno.land
+make install.gnoweb
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

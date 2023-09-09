@@ -226,6 +226,12 @@ The dependencies below are required to develop applications for the Gno platform
   >> go version go1.21.1 linux/amd64
   ```
 
+- Install [gofumpt](https://github.com/mvdan/gofumpt).
+
+  ```shell
+  go install mvdan.cc/gofumpt@latest
+  ```
+
 - Install [Gno](https://github.com/gnolang/gno/tree/master/gnovm/cmd/gno#install).
   
   I will use this method:
@@ -259,15 +265,23 @@ The dependencies below are required to develop applications for the Gno platform
   make install.gnoland
   ```
 
-- Install [gofumpt](https://github.com/mvdan/gofumpt).
+- Install [Gnoweb](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoweb) (install and run a local gnoland instance first).
+
+  ```shell
+  cd [YOUR_PROJECT_ROOT_DIRECTORY]
+  cd ./gno/gno.land
+  make install.gnoweb
+  ```
+
+For verification, our installation output should look similar to the following:
 
   ```shell
   go install mvdan.cc/gofumpt@latest
-  ```
+  >> go: downloading mvdan.cc/gofumpt v0.5.0
+  >> go: downloading golang.org/x/sync v0.1.0
+  >> go: downloading golang.org/x/mod v0.10.0
+  >> go: downloading golang.org/x/tools v0.8.0
 
-Our installation output should look something like the following:
-
-  ```shell
   make install_gno
   >> make --no-print-directory -C ./gnovm    install
   >> go install ./cmd/gno
@@ -281,11 +295,12 @@ Our installation output should look something like the following:
   make install.gnoland
   >> go install ./cmd/gnoland
 
-  go install mvdan.cc/gofumpt@latest
-  >> go: downloading mvdan.cc/gofumpt v0.5.0
-  >> go: downloading golang.org/x/sync v0.1.0
-  >> go: downloading golang.org/x/mod v0.10.0
-  >> go: downloading golang.org/x/tools v0.8.0
+  make install.gnoweb
+  >> go install ./cmd/gnoweb
+  >> go: downloading github.com/gorilla/mux v1.8.0
+  >> go: downloading github.com/gotuna/gotuna v0.6.0
+  >> go: downloading github.com/gorilla/sessions v1.2.1
+  >> go: downloading github.com/gorilla/securecookie v1.1.1
   ```
 
 We can now ask for help from the Gno tools:
@@ -294,6 +309,8 @@ We can now ask for help from the Gno tools:
 gno help 
 
 gnokey help
+
+gnoland help
 ```
 
 ## References
