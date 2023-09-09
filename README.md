@@ -252,7 +252,6 @@ The dependencies below are required to develop applications for the Gno platform
 - Install [Gnokey](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnokey#install-gnokey).
 
   ```shell
-  cd [YOUR_PROJECT_ROOT_DIRECTORY]
   cd ./gno
   make install_gnokey
   ```
@@ -260,7 +259,6 @@ The dependencies below are required to develop applications for the Gno platform
 - Install [Gnoland](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoland).
 
   ```shell
-  cd [YOUR_PROJECT_ROOT_DIRECTORY]
   cd ./gno/gno.land
   make install.gnoland
   ```
@@ -268,7 +266,6 @@ The dependencies below are required to develop applications for the Gno platform
 - Install [Gnoweb](https://github.com/gnolang/gno/tree/master/gno.land/cmd/gnoweb) (install and run a local gnoland instance first).
 
   ```shell
-  cd [YOUR_PROJECT_ROOT_DIRECTORY]
   cd ./gno/gno.land
   make install.gnoweb
   ```
@@ -312,6 +309,27 @@ gnokey help
 
 gnoland help
 ```
+
+#### Testing the Development Platform Setup
+
+Starting Gnoland:
+
+```shell
+cd ./gno/gno.land
+gnoland start
+>> .level 1 .msg Starting multiAppConn [impl multiAppConn [module proxy]]
+>> .level 1 .msg Starting localClient [[impl localClient [module abci-client connection query]] [module proxy]]
+.....
+```
+
+Starting Gnoweb:
+
+```shell
+gnoweb
+>> Running on http://127.0.0.1:8888
+```
+
+## Building the GnoGuess Application
 
 ## References
 

@@ -50,6 +50,11 @@ cd [YOUR_PROJECT_ROOT_DIRECTORY]
 cd ./gno/gno.land
 make install.gnoweb
 
+# Starting Gnoweb
+cd [YOUR_PROJECT_ROOT_DIRECTORY]
+cd ./gno/gno.land
+gnoweb
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
