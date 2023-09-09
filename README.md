@@ -310,7 +310,7 @@ gnokey help
 gnoland help
 ```
 
-#### Testing the Development Platform Setup
+#### Testing the Local Development Platform Setup
 
 Starting Gnoland:
 
@@ -336,6 +336,23 @@ Navigating to Gnoweb at http://127.0.0.1:8888 with a browser should present the 
 ----
 
 ## Building the GnoGuess Application
+
+### Where to place our Code
+
+Currently, in order to create our Gnolang package and realm ```.gno``` code files, we have to be aware of the following folders:
+
+ ```shell
+ # the root
+ gno/examples/gno.land
+
+ # the folder for packages
+ gno/examples/gno.land/p/demo
+ 
+ # the folder for realms
+ gno/examples/gno.land/r/demo
+ ```
+
+
 
 ## References
 
