@@ -329,6 +329,12 @@ gnoweb
 >> Running on http://127.0.0.1:8888
 ```
 
+Navigating to Gnoweb at http://127.0.0.1:8888 with a browser should present the following:
+
+![](images/gnoweb_local.png)
+
+----
+
 ## Building the GnoGuess Application
 
 ## References
