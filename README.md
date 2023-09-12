@@ -363,6 +363,52 @@ gno/examples/gno.land/r/demo
 │   │           │   ├── ...
  ```
 
+This is where our gnolang source code will be:
+
+```shell
+# the folder for our packages
+gno/examples/gno.land/p/demo/guess
+ 
+# the folder for our realm and tests
+gno/examples/gno.land/r/demo/guess
+
+# the folder tree
+├── gno
+│   ├── examples
+│   │   └── gno.land
+│   │       ├── p
+│   │       │   └── demo
+│   │       │       └── guess
+│   │       └── r
+│   │           └── demo
+│   │               └── guess
+ ```
+
+I have duplicated the directory tree and code files as follows in this repository. This is for convenience and in order to not push any changes to the gno repository since it is a sub-repository/submodule of the tutorial repository. However, our ```/demo/guess``` code still needs to be run from within the cloned ```/gno``` repository.
+
+```shell
+# the root
+src_gno/gno/examples/gno.land
+
+# the folder for our packages
+src_gno/gno/examples/gno.land/p/demo/guess
+ 
+# the folder for our realm and tests
+src_gno/gno/examples/gno.land/r/demo/guess
+
+# the folder tree
+├── src_gno
+│   ├── gno
+│   │   ├── examples
+│   │   │   └── gno.land
+│   │   │       ├── p
+│   │   │       │   └── demo
+│   │   │       │       └── guess
+│   │   │       └── r
+│   │   │           └── demo
+│   │   │               └── guess
+ ```
+
 ## References
 
 - [Gnoland on YouTube](https://www.youtube.com/@_gnoland)
