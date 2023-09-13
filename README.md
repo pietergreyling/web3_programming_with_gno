@@ -218,11 +218,18 @@ The dependencies below are required to develop applications for the Gno platform
 
 - Install the latest version of [Go](https://go.dev/) if you haven't already.
 
-  On my system:
+  On Linux:
 
   ```shell
   go version
   >> go version go1.21.1 linux/amd64
+  ```
+
+  And on macOS:
+
+  ```shell
+  go version
+  >> go version go1.21.1 darwin/arm64
   ```
 
 - Install [gofumpt](https://github.com/mvdan/gofumpt).
