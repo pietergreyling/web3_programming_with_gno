@@ -8,6 +8,22 @@ You only need some basic Go programming language knowledge.
 
 This means that you can directly transfer your Go skills to Web3 development.
 
+## Install the latest version of [Go](https://go.dev/) if you haven't already.
+
+  On Linux:
+
+  ```shell
+  go version
+  >> go version go1.21.1 linux/amd64
+  ```
+
+  And on macOS:
+
+  ```shell
+  go version
+  >> go version go1.21.1 darwin/arm64
+  ```
+
 ## Source Code Editing Tools
 
 For editing the code of this project I will be using [Visual Studio Code (VSCode)](https://code.visualstudio.com/).
@@ -197,40 +213,7 @@ We have now verified that the program is working as expected.
 
 ### Prerequisites
 
-#### Important Notes before proceeding
-
-- To install Gno I used:
-
-  ```shell
-  git clone https://github.com/gnolang/gno.git
-  ```
-
-  Instead of (as per the documentation):
-
-  ```shell
-  git clone git@github.com:gnolang/gno.git
-  ```
-
-#### Now Install the following
-
 The dependencies below are required to develop applications for the Gno platform.
-
-
-- Install the latest version of [Go](https://go.dev/) if you haven't already.
-
-  On Linux:
-
-  ```shell
-  go version
-  >> go version go1.21.1 linux/amd64
-  ```
-
-  And on macOS:
-
-  ```shell
-  go version
-  >> go version go1.21.1 darwin/arm64
-  ```
 
 - Install [gofumpt](https://github.com/mvdan/gofumpt).
 
